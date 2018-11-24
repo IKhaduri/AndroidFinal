@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="50dp"
+        android:background="@color/black"
+        >
+
+    </View>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/profile_name"
+        android:theme="@style/ProfileText"
+        app:layout_constraintBottom_toTopOf="@+id/tvSurname"
+        app:layout_constraintEnd_toEndOf="@+id/tvSurname"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/tvSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_surname"
+        android:theme="@style/ProfileText"
+        app:layout_constraintBottom_toTopOf="@+id/tvGender"
+        app:layout_constraintEnd_toEndOf="@+id/tvGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_gender"
+        android:theme="@style/ProfileText"
+        app:layout_constraintBottom_toTopOf="@+id/tvBirthday"
+        app:layout_constraintEnd_toEndOf="@+id/tvBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurname" />
+
+    <TextView
+        android:id="@+id/tvBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_birthday"
+        android:theme="@style/ProfileText"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientCategory"
+        app:layout_constraintEnd_toEndOf="@+id/tvClientCategory"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+    <TextView
+        android:id="@+id/tvClientCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/profile_client_category"
+        android:theme="@style/ProfileText"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirthday" />
+
+    <TextView
+        android:id="@+id/tvNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="გიორგი"
+        android:theme="@style/ProfileTextValue"
+        app:layout_constraintBottom_toTopOf="@+id/tvSurnameValue"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/tvSurnameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="გიორგაძე"
+        android:theme="@style/ProfileTextValue"
+        app:layout_constraintBottom_toTopOf="@+id/tvGenderValue"
+        app:layout_constraintStart_toStartOf="@+id/tvNameValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameValue" />
+
+    <TextView
+        android:id="@+id/tvGenderValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="მამრობითი"
+        android:theme="@style/ProfileTextValue"
+        app:layout_constraintBottom_toTopOf="@+id/tvBirthdayValue"
+        app:layout_constraintStart_toStartOf="@+id/tvSurnameValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurnameValue"
+
+        />
+
+    <TextView
+        android:id="@+id/tvBirthdayValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.10.1991"
+        android:theme="@style/ProfileTextValue"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientCategoryValue"
+        app:layout_constraintStart_toStartOf="@+id/tvGenderValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderValue"
+
+        />
+
+    <TextView
+        android:id="@+id/tvClientCategoryValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLO"
+        android:theme="@style/ProfileTextValue"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/tvBirthdayValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirthdayValue"
+
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ტელეფონი:"
+        app:layout_constraintEnd_toEndOf="@+id/tvClientCategory"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="მისამართი:"
+        app:layout_constraintEnd_toEndOf="@+id/tvPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ელ-ფოსტა:"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <TextView
+        android:id="@+id/tvPhoneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvClientCategoryValue"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tvAddressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvPhoneValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneValue" />
+
+    <TextView
+        android:id="@+id/tvMailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvAddressValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddressValue" />
+</android.support.constraint.ConstraintLayout>

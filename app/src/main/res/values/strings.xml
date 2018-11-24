@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="password_hint">პაროლი</string>
+    <string name="user_hint">მომხმარებელი</string>
+    <string name="login_button_text">შესვლა</string>
+    <string name="profile_name">სახელი:</string>
+    <string name="profile_surname">გვარი:</string>
+    <string name="profile_gender">სქესი:</string>
+    <string name="profile_birthday">დაბადების თარიღი:</string>
+    <string name="profile_client_category">კლიენტის კატეგორია:</string>
+</resources>
